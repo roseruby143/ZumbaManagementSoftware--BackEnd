@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://controllers.zumbaSM.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controllers.zumbaSM.com" xmlns:intf="http://controllers.zumbaSM.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:portType name="ParticipantCrudController">
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ParticipantCrudControllerSoapBinding" type="impl:ParticipantCrudController">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ParticipantCrudControllerService">
+
+      <wsdl:port binding="impl:ParticipantCrudControllerSoapBinding" name="ParticipantCrudController">
+
+         <wsdlsoap:address location="http://localhost:8080/ZumbaSM/services/ParticipantCrudController"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
